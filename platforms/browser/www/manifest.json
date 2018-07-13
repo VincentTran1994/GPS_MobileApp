@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "HelloCordova",
-  "short_name": "HelloCordova",
+  "name": "GPS APP",
+  "short_name": "GPS APP",
   "version": "io.cordova.hellocordova",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
-  "author": "Apache Cordova Team",
+  "description": "This is a private mobile application of the Global Printing Services(GPS).",
+  "author": "GPS Mobile Development Team.",
   "icons": [],
   "start_url": "index.html"
 }

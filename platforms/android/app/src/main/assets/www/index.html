@@ -1,49 +1,247 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
     <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <!-- font awsome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <title>Linking to Font awsome</title>
+        <!-- using bootwatch -->
+        <!-- this link is temporary cannot use -->
+        <!-- <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css"> -->
+        <!-- using bootrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <!-- internal css -->
+        <link rel="stylesheet"   href="css/main.css">
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="index.html">
+            <img src="http://www.gpscenters.com/landing/images/logo.png" height="40" width="80">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i>  Home</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fas fa-info"></i>  About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html"><i class="fas fa-bell"></i>  Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="far fa-address-book"></i>  Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- carousel -->
+        <div class="container-top" style="margin-bottom:0%; margin-top:66px;">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" style="position:relative;">
+            <div class="carousel-item active">
+              <div class="opacity-div"></div>
+              <img class="d-block w-100 half-opacity" src="img/1.jpg" alt="First slide">
             </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 half-opacity" src="img/2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 half-opacity" src="img/3.jpg" alt="Third slide">
+            </div>
+          </div>
+
+          <div class="container" style="margin-top:0%; margin-bottom:0px;">
+            <div class="row">
+              <div class="col-sx-4">
+                <div class="icon-overlay text-center shadow-lg p-3 mb-5 bg-white">
+                  <i class="fas fa-pen-fancy fa-3x text-center"
+                     style="
+                        color:rgb(47, 48, 51);
+                        "
+                  ></i>
+                  <p>
+                    Nail Spa
+                    <br>
+                    Design
+                  </p>
+                </div>
+              </div>
+              <div class="col-sx-4">
+                <div class="icon-overlay text-center shadow-lg p-3 mb-5 bg-white">
+                  <i class="fas fa-puzzle-piece fa-3x text-center"
+                     style="
+                        color:rgb(47, 48, 51);
+                        "
+                  ></i>
+                  <p>
+                    911
+                    <br>
+                    Print
+                  </p>
+                </div>
+              </div>
+              <div class="col-sx-4">
+                <div class="icon-overlay text-center shadow-lg p-3 mb-5 bg-white">
+                  <i class="fas fa-hand-holding-heart fa-3x text-center"
+                     style="
+                        color:rgb(47, 48, 51);
+                        "
+                  ></i>
+                  <p>
+                    Arts
+                    <br>
+                    N Frames
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- first content -->
+      <div class="jumbotron text-center" style="margin-top:0%; background-color:#ffffff; border-radius:0px;">
+         <h4 class="font-weight-bold" style="margin-top:10%;">Awsome Services</h4>
+         <p class="text-muted">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4" style="border:rgb(244, 66, 66) solid 1px; width:20%;">
+        <a class="btn btn-danger btn-lg" href="contact.html" role="button">Contact for A Quote</a>
+        <hr class="my-4">
+        <div class="container">
+          <div class="jumbotron text-center"
+                style="
+                background-color: rgb(14, 20, 142,0.6);
+                color:rgb(225, 225, 237);
+                ">
+            <h4>DID YOU KNOW?</h4>
+            <p style="
+                margin-bottom:10%;
+                color: rgb(176, 177, 193);
+                "
+                >Our Company is growing. Don't skip out.
+            </p>
+
+            <p>
+              Last year over 70% of online Traffic was generated by Mobile
+              Devices and Google is ranking Mobile Search results based on
+              speed of loading.
+            </p>
+
+            <a class="btn btn-light btn-lg" href="services.html" style="border-radius:15px;width:200px;">More info</a>
+
+          </div>
+
+        </div>
+
+        <hr class="my-4">
+
+        <div class="row">
+          <div class="col-sx-6 text-center" style="width:50%; margin-bottom:10%;">
+            <i class="fas fa-check fa-3x" style="color:green;"></i>
+            <h6 class="font-weight-bold">Ultra Simple</h6>
+            <p class="text-muted"style="margin: auto 10%;">
+              Editing our products and loading them is a breeze.
+            </p>
+          </div>
+
+          <div class="col-sx-6 text-center" style="width:50%; display:inline-block;">
+            <i class="fas fa-check fa-3x" style="color:green;"></i>
+            <h6 class="font-weight-bold">Ultra Fast</h6>
+            <p class="text-muted"style="margin:auto 10%;">
+              Built and optimized for insane loading times.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sx-6 text-center" style="width:50%; margin-bottom:10%;">
+            <i class="fas fa-check fa-3x" style="color:green;"></i>
+            <h6 class="font-weight-bold">Ultra Support</h6>
+            <p class="text-muted"style="margin:auto 10%;">
+              We're always here to help our customers.
+            </p>
+          </div>
+
+          <div class="col-sx-6 text-center" style="width:50%; display:inline-block;">
+            <i class="fas fa-check fa-3x" style="color:green;"></i>
+            <h6 class="font-weight-bold">Ultra Quality</h6>
+            <p class="text-muted"style="margin:auto 10%;">
+              Built by the only Elite Mobile Authors on Envato.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- back-to-top icon -->
+        <div class="">
+            <i class="fas fa-angle-up back-to-top fa-3x"></i>
+        </div>
+
+
+        <!-- footer -->
+        <div class="container">
+          <div class="jumbotron rounded text-center">
+            <h4 class="display-5 text-center" style="font-weight:1000; letter-spacing:10px;"> GPS</h4>
+            <small class="text-center">Built with <i class="fas fa-heart" style="color:rgb(239, 64, 64);"></i> By GPS</small>
+            <p class="text-center" style="margin-top:10%;">
+              Simplicity and power packed into a beautiful,
+              feature filled, fast, mobile template.
+            </p>
+            <div class="container" style="margin-bottom:5%;">
+              <div class="row">
+                <div class="col-sx-2 col-sx-offset-1">
+                  <a href="#"><i class="fab fa-facebook-square fa-3x" style="color: rgb(45, 77, 130);"></i></a>
+                </div>
+                <div class="col-sx-2">
+                  <a href="#"><i class="fab fa-twitter-square fa-3x" style="color:rgb(104, 154, 237)"></i></a>
+                </div>
+                <div class="col-sx-2">
+                  <a href="#"><i class="fab fa-google-plus-square fa-3x" style="color:rgb(211, 92, 59)"></i></a>
+                </div>
+                <div class="col-sx-2">
+                  <a href="#"><i class="fas fa-share-alt-square fa-3x" style="color:rgb(165, 44, 135)"></i></a>
+                </div>
+                <div class="col-sx-2">
+                  <a href="#"><i class="fab fa-app-store-ios fa-3x" style="color: rgb(78, 201, 111)"></i></a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="container" style="margin-bottom:5%;">
+              <div class="row">
+                <div class="col-sx-4" >
+                  <a href="#">Privacy Policy</a>
+                </div>
+                <div class="col-sx-4">
+                  <a href="#">Terms and Conditions</a>
+                </div>
+                <div class="col-sx-4">
+                  <a href="#navbar">Back to Top</a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <small id="footer-text-color" style="margin-top:2%; color:gray;">&copy; GPS 2018.All rights reserved</small>
+          </div>
+        </div>
+
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/index.js">
+        </script>
+        <!-- bootrap js and jquery -->
+        <script src="https://code.jquery.com/mobile/git/jquery.mobile-git.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" ></script>
     </body>
 </html>
